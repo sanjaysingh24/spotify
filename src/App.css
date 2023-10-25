@@ -1,12 +1,189 @@
 .App {
   text-align: center;
 }
+body{
+  background: black;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.liner-bg::-webkit-scrollbar {
+  display: none;
+}
+.main-navbar{
+  overflow: hidden;
+}
+.fav-songs{
 
+  height: 52vh;
+}
+.Afternoon_text{
+  margin-top: 77px;
+}
+.liner-bg{
+  background-image: linear-gradient(181deg, rgba(28,14,66),rgb(19,19,18));
+  padding: 0px 12px;
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+  height:85%;
+  overflow-y: scroll;
+  position: relative;
+}
+.card-icon p{
+  background-image: linear-gradient(-50deg, rgba(232, 220, 220, 0.541), rgba(28,14,66));
+  height: 70px;
+  width: 80px;
+  text-align: center;
+  line-height: 80px;
+
+}
+.card-title{
+  margin:auto 20px;
+}
+.card-box{
+ 
+  border-radius: 4px;
+  
+  background-color: hsla(0,0%,100%,.1);
+}
+.card-box:hover .play-btn{
+ visibility: visible;
+ opacity: 1;
+ 
+}
+
+.play-btn{
+  width: 50px;
+  background-color: #1ed760;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.4s all;
+  box-shadow: 0px 0px 10px 0px;
+  
+}
+.song-btn{
+  width: 50px;
+  background-color: #1ed760;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 52px;
+  margin: 10px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s all;
+  box-shadow: 0px 0px 10px 0px;
+  top: -60px;
+  right: 0px;
+}
+.song-btn:hover{
+  transform: scale(1.03);
+}
+.song-card:hover{
+  background-color: #282828;
+}
+.song-card:hover .song-btn{
+ visibility: visible;
+ top: -70px;
+ opacity: 1;
+ 
+}
+.song-button{
+  position: relative;
+}
+.card-icon .card-icon-image{
+
+    width: 81px;
+    height: 70px;
+    object-fit: cover;
+
+}
+.play-btn, .song-btn i{
+  font-size: 20px;
+  color: black;
+  margin-left: 2px;
+}
+.card-box:focus-within,.card-box:hover,.card-box[data-context-menu-open=true] {
+  background: hsla(0,0%,100%,.1)
+}
+.card-icon p i{
+  font-size: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.explore-btn{
+transition: 0.5s all;
+padding: 5px 18px;
+}
 
+.explore-btn:hover{
+transform: scale(1.05);
+transition: 0.5s all;
+}
+.install-btn{
+  transition: 0.5s all;
+}
+.install-btn:hover{
+  transform: scale(1.05);
+  transition: 0.5s all;
+}
+.bell{
+  transition: 0.5s all;
+}
+.bell i{
+  font-size:18px;
+}
+.bell:hover {
+  transform: scale(1.05);
+  transition: 0.5s all;
+}
+.navbar{
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px 10px 0px 0px;
+  position: fixed;
+  width: 73.2%;
+    top: 0px;
+    right: 12px;
+  background:#1C0D47;
+}
+
+
+.song-card{
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #181818;
+}
+.singer-name p{
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.play_bar{
+  position: fixed;
+  bottom: 15px;
+
+ 
+}
+
+.song_name{
+  font-size: 14px;
+  color: white;
+
+  font-weight: 600;
+}
+.artist_name{
+  font-size: 12.5px;
+  color:#a7a7a7;
+}
+.song_image{
+  width: 16%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
